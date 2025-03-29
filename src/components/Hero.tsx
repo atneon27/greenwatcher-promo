@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import Leaf from './Leaf'; // Import the Leaf component
 
 const Hero = () => {
   return (
