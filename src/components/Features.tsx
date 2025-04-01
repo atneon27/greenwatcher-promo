@@ -7,12 +7,12 @@ const Features = () => {
     {
       icon: <Camera className="h-6 w-6 text-krishi-600" />,
       title: "Instant Detection",
-      description: "Take a photo of the affected plant and get disease identification within seconds."
+      description: "Take a photo of affected plants or cattle and get disease identification within seconds."
     },
     {
       icon: <Search className="h-6 w-6 text-krishi-600" />,
       title: "Accurate Diagnosis",
-      description: "Our AI model is trained on thousands of plant diseases for precise identification."
+      description: "Our AI model is trained on thousands of plant and cattle diseases for precise identification."
     },
     {
       icon: <BookOpen className="h-6 w-6 text-krishi-600" />,
@@ -21,13 +21,13 @@ const Features = () => {
     },
     {
       icon: <Sprout className="h-6 w-6 text-krishi-600" />,
-      title: "Plant Library",
-      description: "Access information on hundreds of plant species and common diseases."
+      title: "Comprehensive Library",
+      description: "Access information on hundreds of plant species, cattle breeds and common diseases."
     },
     {
       icon: <Clock className="h-6 w-6 text-krishi-600" />,
       title: "Early Detection",
-      description: "Identify diseases in early stages to prevent crop loss and save resources."
+      description: "Identify diseases in early stages to prevent crop loss and livestock health issues."
     },
     {
       icon: <Wifi className="h-6 w-6 text-krishi-600" />,
@@ -41,10 +41,10 @@ const Features = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold">
-            Powerful Features for <span className="heading-gradient">Plant Health</span>
+            Powerful Features for <span className="heading-gradient">Agricultural Health</span>
           </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-            KrishiMitra combines advanced AI technology with agricultural expertise to help you identify and treat plant diseases efficiently.
+            KrishiMitra combines advanced AI technology with agricultural expertise to help you identify and treat diseases in both plants and livestock efficiently.
           </p>
         </div>
         

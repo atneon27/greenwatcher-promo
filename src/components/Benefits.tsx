@@ -5,13 +5,13 @@ import { Check } from 'lucide-react';
 const Benefits = () => {
   const benefits = [
     "Increase crop yield by early disease detection",
-    "Reduce pesticide use with targeted treatment recommendations",
-    "Save time and resources with instant diagnosis",
-    "Access expert agricultural knowledge at your fingertips",
+    "Improve cattle health and dairy/meat production",
+    "Reduce pesticide and antibiotic use with targeted treatment recommendations",
+    "Save time and resources with instant diagnosis for both plants and animals",
+    "Access expert agricultural and veterinary knowledge at your fingertips",
     "Make informed decisions with accurate disease identification",
-    "Prevent disease spread to healthy plants",
-    "Learn about sustainable farming practices",
-    "Connect with agricultural experts through the app"
+    "Prevent disease spread to healthy plants and animals",
+    "Learn about sustainable farming and livestock management practices"
   ];
 
   return (
@@ -23,31 +23,47 @@ const Benefits = () => {
               <div className="absolute -top-6 -left-6 w-32 h-32 bg-earth-400 rounded-lg blur-2xl opacity-20"></div>
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-krishi-600 rounded-lg blur-2xl opacity-20"></div>
               
-              <div className="relative bg-white p-4 rounded-2xl shadow-xl border border-krishi-100 animate-float">
-                <img 
-                  src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                  alt="Healthy plants" 
-                  className="w-full h-auto rounded-lg"
-                />
+              <div className="grid gap-6">
+                <div className="relative bg-white p-4 rounded-2xl shadow-xl border border-krishi-100 animate-float">
+                  <img 
+                    src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                    alt="Healthy plants" 
+                    className="w-full h-auto rounded-lg"
+                  />
+                  
+                  <div className="mt-6 space-y-4 pb-2">
+                    <div className="flex gap-3">
+                      <div className="h-10 w-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <Check className="h-5 w-5 text-green-600" />
+                      </div>
+                      <div>
+                        <h4 className="font-medium text-gray-900">Healthy Plant Confirmed</h4>
+                        <p className="text-sm text-gray-500">No disease detected in your corn plants</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 
-                <div className="mt-6 space-y-4 pb-2">
-                  <div className="flex gap-3">
-                    <div className="h-10 w-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-                      <Check className="h-5 w-5 text-green-600" />
+                <div className="relative bg-white p-4 rounded-2xl shadow-xl border border-earth-100 animate-float" style={{ animationDelay: "0.2s" }}>
+                  <div className="mt-2 space-y-4 pb-2">
+                    <div className="flex gap-3">
+                      <div className="h-10 w-10 bg-earth-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <Check className="h-5 w-5 text-earth-600" />
+                      </div>
+                      <div>
+                        <h4 className="font-medium text-gray-900">Healthy Cattle Confirmed</h4>
+                        <p className="text-sm text-gray-500">No disease detected in your cattle</p>
+                      </div>
                     </div>
-                    <div>
-                      <h4 className="font-medium text-gray-900">Healthy Plant Confirmed</h4>
-                      <p className="text-sm text-gray-500">No disease detected in your corn plants</p>
+                    
+                    <div className="h-1 w-full bg-gray-100 rounded-full">
+                      <div className="h-1 w-4/5 bg-earth-500 rounded-full"></div>
                     </div>
-                  </div>
-                  
-                  <div className="h-1 w-full bg-gray-100 rounded-full">
-                    <div className="h-1 w-4/5 bg-green-500 rounded-full"></div>
-                  </div>
-                  
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-500">Plant Health Score</span>
-                    <span className="font-medium text-green-600">92/100</span>
+                    
+                    <div className="flex justify-between text-sm">
+                      <span className="text-gray-500">Animal Health Score</span>
+                      <span className="font-medium text-earth-600">95/100</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -59,7 +75,7 @@ const Benefits = () => {
               Benefits of Using <span className="heading-gradient">KrishiMitra</span>
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Our app helps farmers and gardeners improve plant health, increase yield, and practice sustainable agriculture.
+              Our app helps farmers improve plant and animal health, increase yield, and practice sustainable agriculture and livestock management.
             </p>
             
             <div className="mt-8 grid gap-3">

@@ -7,19 +7,19 @@ const HowItWorks = () => {
     {
       icon: <Camera className="h-8 w-8 text-white" />,
       title: "Take a Photo",
-      description: "Snap a clear picture of the affected plant part - leaf, stem, fruit, or the whole plant.",
+      description: "Snap a clear picture of the affected plant part or cattle symptom - whether it's a leaf, stem, fruit, or an animal's physical condition.",
       bgColor: "bg-krishi-600",
     },
     {
       icon: <Search className="h-8 w-8 text-white" />,
       title: "Get Diagnosis",
-      description: "Our AI analyzes the image and identifies the disease with details on severity and spread.",
+      description: "Our AI analyzes the image and identifies the disease with details on severity, spread, and potential health impact.",
       bgColor: "bg-krishi-700",
     },
     {
       icon: <FileText className="h-8 w-8 text-white" />,
       title: "Receive Treatment",
-      description: "Get customized treatment recommendations, organic and chemical solutions, and preventive measures.",
+      description: "Get customized treatment recommendations, organic and chemical solutions, and preventive measures for both plant and animal health.",
       bgColor: "bg-krishi-800",
     }
   ];
@@ -32,7 +32,7 @@ const HowItWorks = () => {
             How <span className="heading-gradient">KrishiMitra</span> Works
           </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-            Our simple 3-step process helps you quickly identify and address plant health issues.
+            Our simple 3-step process helps you quickly identify and address plant and cattle health issues.
           </p>
         </div>
         
@@ -52,12 +52,21 @@ const HowItWorks = () => {
               </div>
               <div className="bg-gray-50 p-6 border border-t-0 border-gray-100 rounded-b-xl">
                 {index === 0 && (
-                  <div className="aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
-                    <img 
-                      src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                      alt="Taking plant photo" 
-                      className="w-full h-full object-cover"
-                    />
+                  <div className="grid grid-cols-2 gap-2">
+                    <div className="aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
+                      <img 
+                        src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                        alt="Taking plant photo" 
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden">
+                      <img 
+                        src="https://images.unsplash.com/photo-1493962853295-0fd70327578a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                        alt="Taking cattle photo" 
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
                 )}
                 {index === 1 && (
@@ -79,20 +88,37 @@ const HowItWorks = () => {
                   </div>
                 )}
                 {index === 2 && (
-                  <div className="bg-white rounded-lg p-4 border border-gray-200">
-                    <div className="flex items-start gap-3 mb-3">
-                      <div className="mt-1">
-                        <div className="h-3 w-3 rounded-full bg-green-500"></div>
+                  <div className="grid grid-cols-2 gap-2">
+                    <div className="bg-white rounded-lg p-3 border border-gray-200">
+                      <div className="flex items-start gap-2 mb-2">
+                        <div className="mt-1">
+                          <div className="h-2 w-2 rounded-full bg-green-500"></div>
+                        </div>
+                        <div className="flex-1">
+                          <div className="h-2 bg-gray-800 rounded-full w-4/5"></div>
+                          <div className="h-2 bg-gray-200 rounded-full w-full mt-1"></div>
+                        </div>
                       </div>
-                      <div className="flex-1">
-                        <div className="h-3 bg-gray-800 rounded-full w-4/5"></div>
-                        <div className="h-2 bg-gray-200 rounded-full w-full mt-2"></div>
-                        <div className="h-2 bg-gray-200 rounded-full w-5/6 mt-1"></div>
+                      <div className="mt-2">
+                        <div className="h-6 bg-krishi-100 rounded-md w-full flex items-center justify-center">
+                          <div className="h-2 w-16 bg-krishi-600 rounded-full"></div>
+                        </div>
                       </div>
                     </div>
-                    <div className="mt-4">
-                      <div className="h-8 bg-krishi-100 rounded-md w-full flex items-center justify-center">
-                        <div className="h-2 w-20 bg-krishi-600 rounded-full"></div>
+                    <div className="bg-white rounded-lg p-3 border border-gray-200">
+                      <div className="flex items-start gap-2 mb-2">
+                        <div className="mt-1">
+                          <div className="h-2 w-2 rounded-full bg-earth-500"></div>
+                        </div>
+                        <div className="flex-1">
+                          <div className="h-2 bg-gray-800 rounded-full w-4/5"></div>
+                          <div className="h-2 bg-gray-200 rounded-full w-full mt-1"></div>
+                        </div>
+                      </div>
+                      <div className="mt-2">
+                        <div className="h-6 bg-earth-100 rounded-md w-full flex items-center justify-center">
+                          <div className="h-2 w-16 bg-earth-600 rounded-full"></div>
+                        </div>
                       </div>
                     </div>
                   </div>
